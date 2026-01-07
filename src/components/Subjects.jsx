@@ -1,21 +1,76 @@
+import {
+  BookOpen,
+  Calculator,
+  GraduationCap,
+  Globe,
+  Map,
+} from "lucide-react";
+
 export default function Subjects() {
   const subjects = [
     {
-      title: "Class 5 to 8",
-      subtitle: "English , Maths & SST",
+      title: "Class 5",
+      subtitle: "English, Maths & SST",
       board: "Board - All",
       description:
-       "Concept-driven teaching of English, Mathematics, and Social Studies with regular practice to strengthen fundamentals and exam readiness.",
-
-      icon: "📚",
+        "Concept-driven teaching to build strong fundamentals in English, Mathematics, and Social Studies.",
+      icon: BookOpen,
     },
     {
-      title: "Class 9 To 12",
+      title: "Class 6",
+      subtitle: "English, Maths & SST",
+      board: "Board - All",
+      description:
+        "Structured learning focused on clarity, problem-solving, and steady academic improvement.",
+      icon: Calculator,
+    },
+    {
+      title: "Class 7",
+      subtitle: "English, Maths & SST",
+      board: "Board - All",
+      description:
+        "Strengthening core concepts with exam-oriented preparation and regular practice.",
+      icon: GraduationCap,
+    },
+    {
+      title: "Class 8",
+      subtitle: "English, Maths & SST",
+      board: "Board - All",
+      description:
+        "Focused guidance to prepare students for higher classes through strong conceptual foundations.",
+      icon: BookOpen,
+    },
+    {
+      title: "Class 9",
       subtitle: "Geography",
       board: "Board - All",
       description:
-        "In-depth understanding of Geography, covering physical concepts, map work, and syllabus mastery.",
-      icon: "✏️",
+        "Clear understanding of physical and human geography with map work and syllabus coverage.",
+      icon: Globe,
+    },
+    {
+      title: "Class 10",
+      subtitle: "Geography",
+      board: "Board - All",
+      description:
+        "Exam-focused geography preparation including maps, diagrams, and board requirements.",
+      icon: Map,
+    },
+    {
+      title: "Class 11",
+      subtitle: "Geography",
+      board: "Board - All",
+      description:
+        "In-depth study of geography concepts with analytical and application-based learning.",
+      icon: Globe,
+    },
+    {
+      title: "Class 12",
+      subtitle: "Geography",
+      board: "Board - All",
+      description:
+        "Advanced geography preparation with emphasis on board exams and answer writing.",
+      icon: GraduationCap,
     },
   ];
 
@@ -42,20 +97,24 @@ export default function Subjects() {
 
           <p className="mx-auto max-w-xl text-lg text-gray-500">
             Personalized home tuition tailored to each student's learning pace
-            and requirements.
+            and academic needs.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2">
           {subjects.map((subject, index) => (
             <div
               key={index}
               className="group relative rounded-3xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
             >
               {/* Icon */}
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-light text-3xl text-brand-primary">
-                {subject.icon}
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-light text-brand-primary">
+                <subject.icon
+                  size={32}
+                  strokeWidth={2}
+                  className="transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
 
               <h3 className="mb-2 text-2xl font-bold text-brand-dark">
