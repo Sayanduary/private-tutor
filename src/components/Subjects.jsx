@@ -2,10 +2,11 @@ export default function Subjects() {
   const subjects = [
     {
       title: "Class 5 to 8",
-      subtitle: "Maths & SST",
+      subtitle: "English , Maths & SST",
       board: "Board - All",
       description:
-        "Comprehensive coverage of Mathematics and Social Studies with a focus on building strong fundamentals.",
+       "Concept-driven teaching of English, Mathematics, and Social Studies with regular practice to strengthen fundamentals and exam readiness.",
+
       icon: "📚",
     },
     {
