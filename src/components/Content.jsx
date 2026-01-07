@@ -19,7 +19,7 @@ export default function Home() {
         <Card>
           <p className="mb-4">
             Hello, I am <strong>Agnita Das</strong>, a dedicated private home
-            tutor based in Belghoria. I focus on strong fundamentals, clear
+            tutor based in Ariadaha, Dakshineswar. I focus on strong fundamentals, clear
             concepts, and building confidence in students through friendly and
             personalized teaching.
           </p>

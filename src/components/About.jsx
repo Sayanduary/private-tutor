@@ -67,7 +67,7 @@ export default function About() {
           </h2>
           
           <p className="text-gray-500 text-lg leading-relaxed mb-10">
-            I am a dedicated private home tutor based in Belghoria. With years of experience
+            I am a dedicated private home tutor based in Ariadaha, Dakshineswar. With years of experience
             teaching Classes 5–8, I focus on building strong fundamentals, clear concepts,
             and confidence in students through friendly and personalized teaching.
           </p>

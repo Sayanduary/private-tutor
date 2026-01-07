@@ -13,7 +13,7 @@ export default function Footer() {
               Agnita <span className="text-gradient">Das</span>
             </h3>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Private Home Tutor based in Belghoria. Dedicated to helping students
+              Private Home Tutor based in Ariadaha, Dakshineswar. Dedicated to helping students
               build strong foundations and excel in their studies.
             </p>
             <div className="flex gap-4">
@@ -60,7 +60,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-400">Belghoria, Kolkata</p>
+                  <p className="text-gray-400">Ariadaha, Dakshineswar</p>
                   <p className="text-gray-500 text-sm">West Bengal, India</p>
                 </div>
               </li>
