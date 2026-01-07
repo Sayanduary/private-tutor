@@ -1,10 +1,10 @@
-import Hero from "../components/Hero";
+import Subjects from "../components/Subjects";
 import PageWrapper from "../components/PageWrapper";
 
-export default function Home() {
+export default function SubjectsPage() {
   return (
     <PageWrapper>
-      <Hero />
+      <Subjects />
     </PageWrapper>
   );
 }

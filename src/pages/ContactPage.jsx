@@ -1,10 +1,10 @@
-import Hero from "../components/Hero";
+import Contact from "../components/Contact";
 import PageWrapper from "../components/PageWrapper";
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <PageWrapper>
-      <Hero />
+      <Contact />
     </PageWrapper>
   );
 }

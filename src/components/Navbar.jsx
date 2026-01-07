@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -11,10 +12,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Subjects", href: "#subjects" },
-    { name: "Pricing", href: "#pricing" },
+    { name: "Home", to: "/" },
+    { name: "About", to: "/about" },
+    { name: "Subjects", to: "/subjects" },
+    { name: "Pricing", to: "/pricing" },
   ];
 
   return (
@@ -27,30 +28,30 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo - Personal Name */}
-        <a href="#home" className="group text-2xl font-bold text-brand-dark tracking-tight">
+        <Link to="/" className="group text-2xl font-bold text-brand-dark tracking-tight">
           <span className="group-hover:text-brand-primary transition-colors duration-300">Agnita</span>{" "}
           <span className="text-gradient">Das</span>
-        </a>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link, index) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.to}
               className="relative text-brand-dark/80 hover:text-brand-primary font-medium transition-all duration-300 text-sm group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="ml-4 px-7 py-3 bg-gradient-to-r from-brand-primary to-brand-secondary text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:shadow-brand-primary/30 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 btn-shine"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -79,24 +80,24 @@ export default function Navbar() {
       >
         <div className="py-6 px-6 flex flex-col gap-2">
           {links.map((link, index) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.to}
               onClick={() => setIsOpen(false)}
               className="text-brand-dark font-medium hover:text-brand-primary hover:bg-orange-50 py-3 px-4 rounded-xl transition-all duration-300"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <hr className="border-gray-200 my-3" />
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             onClick={() => setIsOpen(false)}
             className="text-center px-6 py-4 bg-gradient-to-r from-brand-primary to-brand-secondary text-white font-semibold rounded-xl shadow-lg"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

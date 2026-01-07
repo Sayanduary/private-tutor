@@ -1,10 +1,10 @@
-import Hero from "../components/Hero";
+import Pricing from "../components/Pricing";
 import PageWrapper from "../components/PageWrapper";
 
-export default function Home() {
+export default function PricingPage() {
   return (
     <PageWrapper>
-      <Hero />
+      <Pricing />
     </PageWrapper>
   );
 }
