@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
@@ -26,8 +28,8 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-4">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-primary to-brand-secondary px-8 py-4 font-bold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-primary/40"
             >
               Contact Me
@@ -44,10 +46,10 @@ export default function Hero() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
               </svg>
-            </a>
+            </Link>
 
-            <a
-              href="#subjects"
+            <Link
+              to="/subjects"
               className="group inline-flex items-center gap-2 rounded-full border border-brand-dark/10 bg-white/60 px-7 py-4 font-bold text-brand-dark backdrop-blur transition-all duration-300 hover:border-brand-primary hover:bg-orange-50"
             >
               View Subjects
@@ -64,7 +66,7 @@ export default function Hero() {
                   d="M19 9l-7 7-7-7"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* Teaching Method Card */}
